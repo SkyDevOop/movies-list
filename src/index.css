@@ -1,0 +1,194 @@
+/* Start Variables */
+:root{
+  --main-color:#16151B;
+  --second-color:#d0202d;
+  --text-color:#ff767f;
+}
+/* End Variables */
+/* Start Global Rules */
+body {
+  font-family: 'Edu NSW ACT Foundation', 'cursive', "Open Sans", sans-serif;
+  background-color: var(--main-color);
+}
+html{
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+p{
+  margin: 0;
+}
+/* End Global Rules */
+/* Start NavBar */
+.NavBar-Movie{
+  z-index: 100;
+  top: 0;
+  margin-bottom: 6rem;
+}
+.logo-movie{
+  width: 120px;
+}
+.navbar-toggler:focus {
+  box-shadow: 0 0 6px var(--second-color);
+}
+.search-movie{  
+  border: 1px solid #f6f6f6;
+  flex: 1;
+}
+.form-control{
+  transition: .6s;
+}
+.form-control:focus {
+  color: var(--main-color);
+  font-weight: bold;
+  background-color: #fff;
+  outline: 0;
+  border: none;
+  box-shadow: 0 0 5pt 2pt #D3D3D3;
+  outline-width: 0px;
+  caret-color: var(--text-color);
+}
+.form-control:hover{
+  box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+}
+/* End NavBar */
+/* Start MovieList */
+/* End MovieList */
+/* Start Card */
+.item-card{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  transition: .3s;
+}
+.item-card:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+}
+.img-item{
+  border-radius: 7px;
+}
+.overly-card {
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: .3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.overly-card:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.item-card p {
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: .5rem;
+  opacity: 0;
+  transition: .3s;
+  font-weight: bold;
+}
+.item-card p span {
+  font-weight: normal;
+  color: cyan;
+}
+.overly-card:hover p {
+  opacity: 1;
+}
+/* End Card */
+/* Start Not Found */
+.Not-Found{
+  height: calc(100vh - 580px);
+}
+/* End Not Found */
+/* Start pagination */
+.item-pagination{
+  display: block;
+  padding: 10px 15px;
+  background-color: #fff;
+  transition: .3s;
+  color: var(--main-color);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.item-pagination:hover {
+background-color: var(--text-color);
+color: white;
+}
+.active-pagination{
+  background-color: var(--text-color);
+color: white;
+}
+.previous-pag{
+  border-radius: 10px 0 0 10px;
+}
+.next-pag{
+  border-radius: 0 10px 10px 0;
+}
+.next-pag[tabindex="-1"],
+.previous-pag[tabindex="-1"]{
+  background-color: #D3D3D3;
+  color: var(--main-color);
+}
+/* End pagination */
+/* Start More Details */
+.box-details{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.img-details{
+  height: 400px;
+}
+.show-movie{
+  font-weight: bold;
+  width: 281px;
+  color: var(--main-color);
+  transition: .3s;
+}
+.show-movie:hover{
+  color: white;
+  background-color: var(--text-color);
+}
+.details-movie{
+  flex: 1 1;
+  background: #40404040;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(10px);
+}
+.details-movie li {
+  text-transform: capitalize;
+  padding: 1rem 0;
+  border-bottom:1px solid white;
+  width: fit-content;
+  margin:  0 auto;
+ color: var(--text-color);
+}
+.details-movie li span{
+  color: cyan;
+}
+.histoire{
+  background: #40404040;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(10px);
+}
+.title-histoire{
+  width: 281px;
+  min-width: 130px;
+  color: var(--text-color);
+}
+.text-histoire{
+  color: cyan;
+  line-height: 1.7;
+  font-size: 20px;
+}
+/* End More Details */
